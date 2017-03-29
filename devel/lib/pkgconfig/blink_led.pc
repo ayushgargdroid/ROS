@@ -1,0 +1,8 @@
+prefix=/home/ayushgarg/catkin_ws/devel
+
+Name: blink_led
+Description: Description of blink_led
+Version: 0.0.0
+Cflags: -I/home/ayushgarg/catkin_ws/devel/include
+Libs: -L/home/ayushgarg/catkin_ws/devel/lib 
+Requires: 

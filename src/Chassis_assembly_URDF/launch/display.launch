@@ -1,0 +1,26 @@
+<launch>
+  <arg
+    name="model" />
+  <arg
+    name="gui"
+    default="False" />
+  <param
+    name="robot_description"
+    textfile="$(find Chassis_assembly_URDF)/urdf/Chassis_assembly_URDF.urdf" />
+  <param
+    name="use_gui"
+    value="$(arg gui)" />
+  <node
+    name="test_joint_publisher"
+    pkg="Chassis_assembly_URDF"
+    type="test_state_publisher.py" />
+  <node
+    name="robot_state_publisher"
+    pkg="robot_state_publisher"
+    type="state_publisher" />
+  <node
+    name="rviz"
+    pkg="rviz"
+    type="rviz"
+    args="-d $(find Chassis_assembly_URDF)/urdf.rviz" />
+</launch>

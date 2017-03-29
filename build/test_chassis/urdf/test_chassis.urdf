@@ -1,0 +1,391 @@
+<robot
+  name="test_chassis">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.125084967145013 5.77920583363257E-17 5.79223788666532E-19"
+        rpy="0 0 0" />
+      <mass
+        value="280.772870615736" />
+      <inertia
+        ixx="65.7631395192917"
+        ixy="-1.98515313497637E-20"
+        ixz="8.65170579728273E-17"
+        iyy="14.5886345113082"
+        iyz="-3.35976664114914E-15"
+        izz="54.1016820336546" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_chassis/meshes/base_link.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_chassis/meshes/base_link.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="wheel1">
+    <inertial>
+      <origin
+        xyz="0.075 0.55 0.5213"
+        rpy="0 0 0" />
+      <mass
+        value="6.4422" />
+      <inertia
+        ixx="0.040295"
+        ixy="-2.6643E-34"
+        ixz="1.5046E-33"
+        iyy="0.040295"
+        iyz="-2.4611E-18"
+        izz="0.031456" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_chassis/meshes/wheel1.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_chassis/meshes/wheel1.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="base_to_wheel1"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel1" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="wheel2">
+    <inertial>
+      <origin
+        xyz="0.075 4.0273E-17 0.5213"
+        rpy="0 0 0" />
+      <mass
+        value="6.4422" />
+      <inertia
+        ixx="0.040295"
+        ixy="-2.471E-34"
+        ixz="1.5046E-33"
+        iyy="0.040295"
+        iyz="-2.7167E-18"
+        izz="0.031456" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_chassis/meshes/wheel2.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_chassis/meshes/wheel2.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="base_to_wheel2"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel2" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="wheel3">
+    <inertial>
+      <origin
+        xyz="0.075 -0.55 0.5213"
+        rpy="0 0 0" />
+      <mass
+        value="6.4422" />
+      <inertia
+        ixx="0.040295"
+        ixy="-2.6643E-34"
+        ixz="1.5046E-33"
+        iyy="0.040295"
+        iyz="-2.4611E-18"
+        izz="0.031456" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_chassis/meshes/wheel3.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_chassis/meshes/wheel3.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="base_to_wheel3"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel3" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="wheel4">
+    <inertial>
+      <origin
+        xyz="0.075 0.55 -0.5213"
+        rpy="0 0 0" />
+      <mass
+        value="6.4422" />
+      <inertia
+        ixx="0.040295"
+        ixy="-4.4705E-34"
+        ixz="-7.5232E-34"
+        iyy="0.040295"
+        iyz="1.3787E-18"
+        izz="0.031456" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_chassis/meshes/wheel4.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_chassis/meshes/wheel4.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="base_to_wheel4"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel4" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="wheel5">
+    <inertial>
+      <origin
+        xyz="0.075 -2.3565E-17 -0.5213"
+        rpy="0 0 0" />
+      <mass
+        value="6.4422" />
+      <inertia
+        ixx="0.040295"
+        ixy="-4.2772E-34"
+        ixz="-7.5232E-34"
+        iyy="0.040295"
+        iyz="1.6343E-18"
+        izz="0.031456" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_chassis/meshes/wheel5.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_chassis/meshes/wheel5.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="base_to_wheel5"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel5" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="wheel6">
+    <inertial>
+      <origin
+        xyz="0.075 -0.55 -0.5213"
+        rpy="0 0 0" />
+      <mass
+        value="6.4422" />
+      <inertia
+        ixx="0.040295"
+        ixy="-4.4705E-34"
+        ixz="2.7373E-50"
+        iyy="0.040295"
+        iyz="1.3787E-18"
+        izz="0.031456" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_chassis/meshes/wheel6.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_chassis/meshes/wheel6.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="base_to_wheel6"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel6" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>

@@ -1,0 +1,123 @@
+<robot name="my_robot2">
+	<material name="red">
+		<color rgba="1 0 0 1" />
+	</material>
+	<material name="black">
+		<color rgba="0 0 0 1"/>
+	</material>
+	<material name="blue">
+		<color rgba="0 0 1 0.7"/>
+	</material>
+	<link name="base_link">
+		<visual>
+			<geometry>
+				<box size="1.5 0.75 0.5" />
+			</geometry>
+			<material name="red" />
+		</visual>
+	</link>
+	<link name="wheel1">
+		<visual>
+			<geometry>
+				<cylinder length="0.20" radius="0.25"/>
+			</geometry>
+			<material name="black"/>
+		</visual>
+	</link>
+	<joint name="base_to_wheel1" type="continuous">
+		<axis xyz="0 0 1"/>
+		<origin rpy="1.57 0 0" xyz="-0.75 -0.485 0"/>
+		<parent link="base_link"/>
+		<child link="wheel1"/>
+		<limit effort="100" velocity="100"/>
+	</joint>
+	<link name="strip">
+		<visual>
+			<geometry>
+				<box size="0.2 0.05 0.01"/>
+			</geometry>
+			<origin rpy="1.57 1.57 0" xyz="0 0 0"/>
+			<material name="blue"/>
+		</visual>
+	</link>
+	<joint name="strip_to_wheel1" type="fixed">
+		<parent link="wheel1"/>
+		<child link="strip"/>
+		<origin rpy="0 0 0" xyz="0 0.25 0"/>
+	</joint>
+	<link name="wheel2">
+		<visual>
+			<geometry>
+				<cylinder length="0.20" radius="0.25"/>
+			</geometry>
+			<material name="black"/>
+		</visual>
+	</link>
+	<joint name="base_to_wheel2" type="continuous">
+		<axis xyz="0 0 1"/>
+		<origin rpy="1.57 0 0" xyz="0 -0.485 0"/>
+		<parent link="base_link"/>
+		<child link="wheel2"/>
+		<limit effort="100" velocity="100"/>
+	</joint>
+	<link name="wheel3">
+		<visual>
+			<geometry>
+				<cylinder length="0.20" radius="0.25"/>
+			</geometry>
+			<material name="black"/>
+		</visual>
+	</link>
+	<joint name="base_to_wheel3" type="continuous">
+		<axis xyz="0 0 1"/>
+		<origin rpy="1.57 0 0" xyz="0.75 -0.485 0"/>
+		<parent link="base_link"/>
+		<child link="wheel3"/>
+		<limit effort="100" velocity="100"/>
+	</joint>
+	<link name="wheel4">
+		<visual>
+			<geometry>
+				<cylinder length="0.20" radius="0.25"/>
+			</geometry>
+			<material name="black"/>
+		</visual>
+	</link>
+	<joint name="base_to_wheel4" type="continuous">
+		<axis xyz="0 0 1"/>
+		<origin rpy="1.57 0 0" xyz="0.75 0.485 0"/>
+		<parent link="base_link"/>
+		<child link="wheel4"/>
+		<limit effort="100" velocity="100"/>
+	</joint>
+	<link name="wheel5">
+		<visual>
+			<geometry>
+				<cylinder length="0.20" radius="0.25"/>
+			</geometry>
+			<material name="black"/>
+		</visual>
+	</link>
+	<joint name="base_to_wheel5" type="continuous">
+		<axis xyz="0 0 1"/>
+		<origin rpy="1.57 0 0" xyz="0 0.485 0"/>
+		<parent link="base_link"/>
+		<child link="wheel5"/>
+		<limit effort="100" velocity="100"/>
+	</joint>
+	<link name="wheel6">
+		<visual>
+			<geometry>
+				<cylinder length="0.20" radius="0.25"/>
+			</geometry>
+			<material name="black"/>
+		</visual>
+	</link>
+	<joint name="base_to_wheel6" type="continuous">
+		<axis xyz="0 0 1"/>
+		<origin rpy="1.57 0 0" xyz="-0.75 0.485 0"/>
+		<parent link="base_link"/>
+		<child link="wheel6"/>
+		<limit effort="100" velocity="100"/>
+	</joint>
+</robot>

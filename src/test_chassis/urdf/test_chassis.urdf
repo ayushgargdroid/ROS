@@ -1,0 +1,200 @@
+<robot
+  name="test_chassis">
+  <link
+    name="base_link">
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="-1.5 -1.5 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/ayushgarg/catkin_ws/src/test_chassis/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+  </link>
+  <link
+    name="wheel2">
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="-1.5 -1.5 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/ayushgarg/catkin_ws/src/test_chassis/meshes/wheel2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+  </link>
+  <joint
+    name="base_to_wheel2"
+    type="continuous">
+    <origin
+      xyz="0.075 0 0.625"
+      rpy="1.5708 1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="wheel3">
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="-1.5 -1.5 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/ayushgarg/catkin_ws/src/test_chassis/meshes/wheel3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+  </link>
+  <joint
+    name="base_to_wheel3"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel3" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="wheel4">
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="-1.5 -1.5 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/ayushgarg/catkin_ws/src/test_chassis/meshes/wheel4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+  </link>
+  <joint
+    name="base_to_wheel4"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel4" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="wheel5">
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="-1.5 -1.5 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/ayushgarg/catkin_ws/src/test_chassis/meshes/wheel5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+  </link>
+  <joint
+    name="base_to_wheel5"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel5" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="wheel6">
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="-1.5 -1.5 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/ayushgarg/catkin_ws/src/test_chassis/meshes/wheel6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+  </link>
+  <joint
+    name="base_to_wheel6"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel6" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="wheel1">
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="-1.5 -1.5 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/ayushgarg/catkin_ws/src/test_chassis/meshes/wheel1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+  </link>
+  <joint
+    name="base_to_wheel1"
+    type="continuous">
+    <origin
+      xyz="0.075 0.55 0.625"
+      rpy="1.5708 1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

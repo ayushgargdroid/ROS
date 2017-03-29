@@ -1,0 +1,2 @@
+beginner_tutorials:blink_led:learning_tf2:using_markers
+-G Unix Makefiles -DCATKIN_DEVEL_PREFIX=/home/ayushgarg/catkin_ws/devel_isolated -DCMAKE_INSTALL_PREFIX=/home/ayushgarg/catkin_ws/install_isolated
