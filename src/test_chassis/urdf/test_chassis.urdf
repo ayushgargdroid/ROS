@@ -45,7 +45,7 @@
     <child
       link="wheel2" />
     <axis
-      xyz="0 0 0" />
+      xyz="0 0 1" />
   </joint>
   <link
     name="wheel3">
@@ -75,7 +75,7 @@
     <child
       link="wheel3" />
     <axis
-      xyz="0 0 0" />
+      xyz="0 0 1" />
   </joint>
   <link
     name="wheel4">
@@ -105,7 +105,7 @@
     <child
       link="wheel4" />
     <axis
-      xyz="0 0 0" />
+      xyz="0 0 1" />
   </joint>
   <link
     name="wheel5">
@@ -135,7 +135,7 @@
     <child
       link="wheel5" />
     <axis
-      xyz="0 0 0" />
+      xyz="0 0 1" />
   </joint>
   <link
     name="wheel6">
@@ -165,7 +165,7 @@
     <child
       link="wheel6" />
     <axis
-      xyz="0 0 0" />
+      xyz="0 0 1" />
   </joint>
   <link
     name="wheel1">
@@ -188,13 +188,13 @@
     name="base_to_wheel1"
     type="continuous">
     <origin
-      xyz="0.075 0.55 0.625"
+      xyz="0 0 0"
       rpy="1.5708 1.5708 0" />
     <parent
       link="base_link" />
     <child
       link="wheel1" />
     <axis
-      xyz="0 0 0" />
+      xyz="0 0 1" />
   </joint>
 </robot>

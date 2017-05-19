@@ -3,6 +3,6 @@ prefix=/home/ayushgarg/catkin_ws/devel
 Name: testbot_description
 Description: Description of testbot_description
 Version: 0.0.0
-Cflags: 
+Cflags: -I/home/ayushgarg/catkin_ws/devel/include
 Libs: -L/home/ayushgarg/catkin_ws/devel/lib 
 Requires: 

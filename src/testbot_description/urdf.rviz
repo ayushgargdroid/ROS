@@ -45,7 +45,7 @@ Visualization Manager:
         Y: 0
         Z: 0
       Plane: XY
-      Plane Cell Count: 10
+      Plane Cell Count: 1000
       Reference Frame: <Fixed Frame>
       Value: true
     - Alpha: 1
@@ -255,23 +255,170 @@ Visualization Manager:
       Value: true
       Visual Enabled: true
     - Class: rviz/TF
-      Enabled: false
+      Enabled: true
       Frame Timeout: 15
       Frames:
         All Enabled: true
+        base_link:
+          Value: true
+        head_link:
+          Value: true
+        rim1:
+          Value: true
+        rim2:
+          Value: true
+        rim3:
+          Value: true
+        rim4:
+          Value: true
+        rim5:
+          Value: true
+        rim6:
+          Value: true
+        strip1:
+          Value: true
+        strip10:
+          Value: true
+        strip11:
+          Value: true
+        strip12:
+          Value: true
+        strip13:
+          Value: true
+        strip14:
+          Value: true
+        strip15:
+          Value: true
+        strip16:
+          Value: true
+        strip17:
+          Value: true
+        strip18:
+          Value: true
+        strip19:
+          Value: true
+        strip2:
+          Value: true
+        strip20:
+          Value: true
+        strip21:
+          Value: true
+        strip22:
+          Value: true
+        strip23:
+          Value: true
+        strip24:
+          Value: true
+        strip3:
+          Value: true
+        strip4:
+          Value: true
+        strip5:
+          Value: true
+        strip6:
+          Value: true
+        strip7:
+          Value: true
+        strip8:
+          Value: true
+        strip9:
+          Value: true
+        wheel1:
+          Value: true
+        wheel2:
+          Value: true
+        wheel3:
+          Value: true
+        wheel4:
+          Value: true
+        wheel5:
+          Value: true
+        wheel6:
+          Value: true
+        world:
+          Value: true
       Marker Scale: 1
       Name: TF
       Show Arrows: true
       Show Axes: true
       Show Names: true
       Tree:
-        {}
+        world:
+          base_link:
+            head_link:
+              {}
+            wheel1:
+              rim1:
+                {}
+              strip1:
+                {}
+              strip2:
+                {}
+              strip3:
+                {}
+              strip4:
+                {}
+            wheel2:
+              rim2:
+                {}
+              strip5:
+                {}
+              strip6:
+                {}
+              strip7:
+                {}
+              strip8:
+                {}
+            wheel3:
+              rim3:
+                {}
+              strip10:
+                {}
+              strip11:
+                {}
+              strip12:
+                {}
+              strip9:
+                {}
+            wheel4:
+              rim4:
+                {}
+              strip13:
+                {}
+              strip14:
+                {}
+              strip15:
+                {}
+              strip16:
+                {}
+            wheel5:
+              rim5:
+                {}
+              strip17:
+                {}
+              strip18:
+                {}
+              strip19:
+                {}
+              strip20:
+                {}
+            wheel6:
+              rim6:
+                {}
+              strip21:
+                {}
+              strip22:
+                {}
+              strip23:
+                {}
+              strip24:
+                {}
       Update Interval: 0
-      Value: false
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 255; 255; 255
-    Fixed Frame: base_link
+    Fixed Frame: world
     Frame Rate: 30
   Name: root
   Tools:
@@ -291,25 +438,25 @@ Visualization Manager:
   Value: true
   Views:
     Current:
-      Class: rviz/Orbit
-      Distance: 4.13524866
+      Class: rviz/ThirdPersonFollower
+      Distance: 5.27318621
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0
-        Y: 0
-        Z: 0
+        X: -0.701608777
+        Y: 0.363908559
+        Z: -9.53674316e-07
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.0500000007
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.535398543
-      Target Frame: <Fixed Frame>
-      Value: Orbit (rviz)
-      Yaw: 0.660404801
+      Pitch: 0.258406311
+      Target Frame: base_link
+      Value: ThirdPersonFollower (rviz)
+      Yaw: 1.07040477
     Saved: ~
 Window Geometry:
   Displays:
